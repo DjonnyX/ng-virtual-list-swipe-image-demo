@@ -1,12 +1,11 @@
 import { CommonModule } from '@angular/common';
 import {
-  Component, computed, effect, ElementRef, inject, input, Signal, viewChild,
+  Component, computed, effect, ElementRef, inject, input, Signal,
   ViewEncapsulation,
 } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { IDisplayObjectConfig, IDisplayObjectMeasures, IVirtualListItem, NgVirtualListPublicService } from 'ng-virtual-list';
 import { ISwipeImageData } from "@shared/models/images";
-import { GradientColor } from '@shared/types';
 import { ThemeService } from '@shared/theming';
 import { ITheme } from '@shared/theming';
 import { IProxyCollectionItem } from '@widgets/swipe-image/swipe-image/utils/proxy-collection';
@@ -62,12 +61,12 @@ export class ImageComponent {
     this.theme = toSignal(this._themeService.$theme);
 
     this.width = computed(() => {
-      const w = (this.measures()?.width ?? 0) * 1.1;
+      const w = (this.measures()?.width ?? 0);
       return w;
     });
 
     this.height = computed(() => {
-      const h = (this.measures()?.height ?? 0) * 1.1;
+      const h = (this.measures()?.height ?? 0);
       return h;
     });
 
