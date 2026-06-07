@@ -6,11 +6,9 @@ import {
 } from 'rxjs';
 import { PageLoadingIndicatorComponent } from '@entities/book';
 import { ImageBoxComponent } from '@features/swipe-image';
-import { NgVirtualListComponent } from '@shared/components';
 import {
-  NgVirtualListModule, IAnimationParams, Id, IDisplayObjectConfig, IScrollEvent, IVirtualListItem,
-  NgVirtualListPublicService, IScrollingSettings,
-  ItemTransformations,
+  NgVirtualListModule, NgVirtualListComponent, IAnimationParams, Id, IDisplayObjectConfig, IScrollEvent, IVirtualListItem,
+  NgVirtualListPublicService, IScrollingSettings, ItemTransformations,
 } from 'ng-virtual-list';
 import { ISwipeImageData } from "@shared/models/images";
 import { ThemeService } from '@shared/theming';
